@@ -10,3 +10,14 @@ function setUserName() {
     myHeading.innerHTML = 'こんにちは, ' + myName;
   }
 }
+if(!localStorage.getItem('name')) {
+  //以前に特別な場所(ファイルなど)保存していた名前があれば、それを使う。
+  setUserName();
+} else {
+  let storedName = localStorage.getItem('name');
+  myHeading.innerHTML = '今日は ' + storedName;
+}
+
+myButton.onclick = function() {
+  setUserName();
+}
