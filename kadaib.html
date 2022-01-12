@@ -6,8 +6,8 @@
     <title>Google Maps example</title>
     <style>
       #map_canvas {
-        width: 200px;
-        height: 200px;
+        width: 600px;
+        height: 600px;
       }
     </style>
   </head>
@@ -19,7 +19,7 @@
     function initMap() {
       var myOptions = {
         zoom: 8,
-        center: {lat: 48.8583, lng: 2.2944},
+        center: {lat: 48.856215, lng: 2.297660},
         mapTypeId: google.maps.MapTypeId.TERRAIN,
         disableDefaultUI: true,
         // Step 4. Customize displayed controls
@@ -34,7 +34,7 @@
       var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
 
       var marker = new google.maps.Marker({
-        position: {lat: 48.8583, lng: 2.2944},
+        position: {lat: 48.856215, lng: 2.297660},
         icon: iconBase + 'flag_maps.png',
         map: map
       });
